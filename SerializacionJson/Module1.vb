@@ -21,7 +21,10 @@ Module Module1
         actualizacionCol.Add(actualizacion1)
         actualizacionCol.Add(actualizacion2)
 
+        '---------------------------------------------------------
+        '¡¡¡IMPORTANTE!!!
         'Debemos instalar un paquete de Nuget: Newtonsoft.Json
+        '---------------------------------------------------------
         Console.WriteLine("Serializando información....")
         Dim jsonTxt = JsonConvert.SerializeObject(actualizacionCol)
         'Guardamos el texto en un archivo. Puede llamarse de cualuqier forma y se puede poner cualquier extension
